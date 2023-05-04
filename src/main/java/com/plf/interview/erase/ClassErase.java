@@ -17,7 +17,7 @@ public class ClassErase {
      * 3、提升性能，编译完成后，基本就确定了类型，节省了强制类型转换带来的性能消耗
      */
     public static void main(String[] args) {
-        reflectClass();
+        compareClass();
     }
 
     public static void compareClass(){
@@ -26,6 +26,8 @@ public class ClassErase {
         List<Integer> list2 = new ArrayList<>();
         // true
         System.out.println(list1.getClass() == list2.getClass());
+        System.out.println(list1.getClass());
+        System.out.println(list2.getClass());
     }
 
     public static void reflectClass(){
